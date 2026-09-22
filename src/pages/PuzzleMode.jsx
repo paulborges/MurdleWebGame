@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import PuzzleSidebar from "../components/PuzzleSidebar"
+import DeductionGrid from "../components/DeductionGrid"
+import {who, what, where} from "../data/puzzleData"
 
 function PuzzleMode(){
     return(
@@ -11,6 +13,16 @@ function PuzzleMode(){
             <PuzzleSidebar/>
             <main className="puzzle-game-area">
                 <h2>Game Area</h2>
+                <DeductionGrid
+                    category="WHAT"
+                    items={what}
+                    getItemName={(item)=>item.weapon}
+                />
+                <DeductionGrid
+                    category="WHERE"
+                    items={where}
+                    getItemName={(item)=>item.locname}
+                />
             </main>
         </div>
 

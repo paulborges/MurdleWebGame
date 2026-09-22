@@ -94,22 +94,78 @@
 .puzzle-mode {
     min-height: 100vh;
     padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .puzzle-layout {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 320px 1fr;
     gap: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .puzzle-sidebar {
     border: 1px solid #999;
     border-radius:  8px;
     padding: 20px;
+    width: 100%;
+    max-height: 750px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .puzzle-game-area {
     border: 1px solid #999;
     border-radius: 8px;
     padding: 20px;
+    min-height: 700px;
+    box-sizing: border-box;
+}
+
+.sidebar-section {
+    margin-top: 20px;
+}
+
+.sidebar-section h3 {
+    margin-bottom: 15px;
+}
+
+.suspect-info {
+    border-bottom: 1px solid #999;
+    padding: 10px 0;
+}
+
+.suspect-info h4{
+    margin: 5px 0 10px;
+}
+
+.suspect-info p{
+    margin: 4px 0;
+}
+
+
+.deduction-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.deduction-grid table {
+    border-collapse: collapse;
+}
+
+.deduction-grid th, 
+.deduction-grid td {
+    border: 1px solid #999;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.deduction-grid th {
+    padding: 10px;
 }

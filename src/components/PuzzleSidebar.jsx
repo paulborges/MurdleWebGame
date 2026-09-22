@@ -7,17 +7,16 @@ function PuzzleSidebar(){
             <div className="sidebar-section">
                 <h3>Suspects</h3>
                 {who.map((user)=>(
-                    <div key = {user.id}>
+                    <div key = {user.id} className="suspect-info">
                         <h4>{user.name}</h4>
-                        <h4>{user.description}</h4>
-                        <h4>{user.height}</h4>
-                        <h4>{user.hair}</h4>
-                        <h4>{user.eyes}</h4>
-                        <h4>{user.hand}</h4>
+                        <p>{user.description}</p>
+                        <p>Height: {user.height}</p>
+                        <p>Hair: {user.hair}</p>
+                        <p>Eyes: {user.eyes}</p>
+                        <p>Hand: {user.hand}</p>
                     </div>
                 ))}    
             </div>
-            <h3>Suspects</h3>
             <h3>Locations</h3>
             <h3>Weapons</h3>
         </aside>
