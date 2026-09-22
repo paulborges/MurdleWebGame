@@ -1,0 +1,115 @@
+.main-page {
+  border: 1px solid #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.puzzle-mode {
+  border: 1px solid #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-mode-card {
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.game-mode-cards{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.murdle-title{
+    text-align: center;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.header{
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;
+    color: black;
+    background-color: azure;
+    cursor: pointer;
+    align-items: center;
+    font-size: medium;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+.game-selection-title{
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
+
+.table-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-size: medium;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.table-data td{
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+
+.puzzle-mode {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.puzzle-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+.puzzle-sidebar {
+    border: 1px solid #999;
+    border-radius:  8px;
+    padding: 20px;
+}
+
+.puzzle-game-area {
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 20px;
+}
